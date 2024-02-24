@@ -14,6 +14,9 @@
 		9362DE2B2B6B6E34008824E9 /* RideShareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9362DE2A2B6B6E34008824E9 /* RideShareTests.swift */; };
 		9362DE352B6B6E34008824E9 /* RideShareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9362DE342B6B6E34008824E9 /* RideShareUITests.swift */; };
 		9362DE372B6B6E34008824E9 /* RideShareUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9362DE362B6B6E34008824E9 /* RideShareUITestsLaunchTests.swift */; };
+		93C08A902B895AFC00369A40 /* AcceptRideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C08A8F2B895AFC00369A40 /* AcceptRideView.swift */; };
+		93C4740C2B89128700B272AE /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C4740B2B89128700B272AE /* ProfileView.swift */; };
+		93C4740E2B893B7500B272AE /* AnimatedBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C4740D2B893B7500B272AE /* AnimatedBackground.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		9362DE302B6B6E34008824E9 /* RideShareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RideShareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9362DE342B6B6E34008824E9 /* RideShareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideShareUITests.swift; sourceTree = "<group>"; };
 		9362DE362B6B6E34008824E9 /* RideShareUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideShareUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		93C08A8F2B895AFC00369A40 /* AcceptRideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceptRideView.swift; sourceTree = "<group>"; };
+		93C4740B2B89128700B272AE /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		93C4740D2B893B7500B272AE /* AnimatedBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedBackground.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,9 @@
 				9362DE1B2B6B6E31008824E9 /* ContentView.swift */,
 				9362DE1D2B6B6E34008824E9 /* Assets.xcassets */,
 				9362DE1F2B6B6E34008824E9 /* Preview Content */,
+				93C4740B2B89128700B272AE /* ProfileView.swift */,
+				93C4740D2B893B7500B272AE /* AnimatedBackground.swift */,
+				93C08A8F2B895AFC00369A40 /* AcceptRideView.swift */,
 			);
 			path = RideShare;
 			sourceTree = "<group>";
@@ -257,7 +266,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93C08A902B895AFC00369A40 /* AcceptRideView.swift in Sources */,
 				9362DE1C2B6B6E31008824E9 /* ContentView.swift in Sources */,
+				93C4740C2B89128700B272AE /* ProfileView.swift in Sources */,
+				93C4740E2B893B7500B272AE /* AnimatedBackground.swift in Sources */,
 				9362DE1A2B6B6E31008824E9 /* RideShareApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
