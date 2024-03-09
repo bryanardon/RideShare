@@ -1,13 +1,13 @@
 //
-//  ProfileView.swift
+//  ShowProfileView.swift
 //  RideShare
 //
-//  Created by Bryan Ardon on 2/23/24.
+//  Created by Bryan Ardon on 3/8/24.
 //
 
 import SwiftUI
 
-struct ProfileView: View {
+struct ShowProfileView: View {
     @State private var profileImage: Image = Image("ProfilePicture")
     @State private var username: String = "Gorilla Joe"
     @State private var drivingSince: String = "1990"
@@ -30,9 +30,12 @@ struct ProfileView: View {
 //                .edgesIgnoringSafeArea(.all)
                 
             VStack {
-                Text(username)
+                Text("\(username)")
                     .font(.title)
-                    .padding()
+                Spacer().frame(height:5)
+                Text("Your Driver")
+                    .font(.callout)
+//                    .padding()
                 
                 // Profile Image
                 profileImage
@@ -40,6 +43,9 @@ struct ProfileView: View {
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 250, height: 220)
                     .clipShape(Circle())
+//                        .overlay(
+//                            Circle().stroke(Color.black, lineWidth: 2)
+//                        )
                     .padding(15)
                 Spacer().frame(height: 50)
 
@@ -96,7 +102,7 @@ struct ProfileView: View {
                         .padding()
                         .background(Color.white)
                         .cornerRadius(10)
-//                        .shadow(radius: 5)
+                        .shadow(radius: 5)
                         .frame(maxWidth: 370)
                     
                     
@@ -109,8 +115,9 @@ struct ProfileView: View {
        
 }
 
-struct ProfileView_Previews: PreviewProvider {
+struct ShowProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileView()
+        ShowProfileView()
     }
 }
+

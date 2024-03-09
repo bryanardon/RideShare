@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9303864E2B9BF9C0000134B6 /* ShowProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9303864D2B9BF9C0000134B6 /* ShowProfileView.swift */; };
+		930386502B9BFE03000134B6 /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9303864F2B9BFE03000134B6 /* ReviewView.swift */; };
+		930386522B9C0606000134B6 /* DriverAcceptedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930386512B9C0606000134B6 /* DriverAcceptedView.swift */; };
 		9362DE1A2B6B6E31008824E9 /* RideShareApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9362DE192B6B6E31008824E9 /* RideShareApp.swift */; };
 		9362DE1C2B6B6E31008824E9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9362DE1B2B6B6E31008824E9 /* ContentView.swift */; };
 		9362DE1E2B6B6E34008824E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9362DE1D2B6B6E34008824E9 /* Assets.xcassets */; };
@@ -14,9 +17,9 @@
 		9362DE2B2B6B6E34008824E9 /* RideShareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9362DE2A2B6B6E34008824E9 /* RideShareTests.swift */; };
 		9362DE352B6B6E34008824E9 /* RideShareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9362DE342B6B6E34008824E9 /* RideShareUITests.swift */; };
 		9362DE372B6B6E34008824E9 /* RideShareUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9362DE362B6B6E34008824E9 /* RideShareUITestsLaunchTests.swift */; };
+		93BDF0B32B8A63290031DA3B /* RideCompleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BDF0B22B8A63290031DA3B /* RideCompleteView.swift */; };
 		93C08A902B895AFC00369A40 /* AcceptRideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C08A8F2B895AFC00369A40 /* AcceptRideView.swift */; };
 		93C4740C2B89128700B272AE /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C4740B2B89128700B272AE /* ProfileView.swift */; };
-		93C4740E2B893B7500B272AE /* AnimatedBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C4740D2B893B7500B272AE /* AnimatedBackground.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9303864D2B9BF9C0000134B6 /* ShowProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowProfileView.swift; sourceTree = "<group>"; };
+		9303864F2B9BFE03000134B6 /* ReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
+		930386512B9C0606000134B6 /* DriverAcceptedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverAcceptedView.swift; sourceTree = "<group>"; };
 		9362DE162B6B6E31008824E9 /* RideShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RideShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9362DE192B6B6E31008824E9 /* RideShareApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideShareApp.swift; sourceTree = "<group>"; };
 		9362DE1B2B6B6E31008824E9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -47,9 +53,10 @@
 		9362DE302B6B6E34008824E9 /* RideShareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RideShareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9362DE342B6B6E34008824E9 /* RideShareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideShareUITests.swift; sourceTree = "<group>"; };
 		9362DE362B6B6E34008824E9 /* RideShareUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideShareUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		93A94BED2B97C01900B00049 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		93BDF0B22B8A63290031DA3B /* RideCompleteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideCompleteView.swift; sourceTree = "<group>"; };
 		93C08A8F2B895AFC00369A40 /* AcceptRideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceptRideView.swift; sourceTree = "<group>"; };
 		93C4740B2B89128700B272AE /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		93C4740D2B893B7500B272AE /* AnimatedBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedBackground.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,13 +107,17 @@
 		9362DE182B6B6E31008824E9 /* RideShare */ = {
 			isa = PBXGroup;
 			children = (
+				93A94BED2B97C01900B00049 /* Info.plist */,
 				9362DE192B6B6E31008824E9 /* RideShareApp.swift */,
 				9362DE1B2B6B6E31008824E9 /* ContentView.swift */,
 				9362DE1D2B6B6E34008824E9 /* Assets.xcassets */,
 				9362DE1F2B6B6E34008824E9 /* Preview Content */,
 				93C4740B2B89128700B272AE /* ProfileView.swift */,
-				93C4740D2B893B7500B272AE /* AnimatedBackground.swift */,
 				93C08A8F2B895AFC00369A40 /* AcceptRideView.swift */,
+				93BDF0B22B8A63290031DA3B /* RideCompleteView.swift */,
+				9303864D2B9BF9C0000134B6 /* ShowProfileView.swift */,
+				9303864F2B9BFE03000134B6 /* ReviewView.swift */,
+				930386512B9C0606000134B6 /* DriverAcceptedView.swift */,
 			);
 			path = RideShare;
 			sourceTree = "<group>";
@@ -266,10 +277,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				930386502B9BFE03000134B6 /* ReviewView.swift in Sources */,
+				9303864E2B9BF9C0000134B6 /* ShowProfileView.swift in Sources */,
 				93C08A902B895AFC00369A40 /* AcceptRideView.swift in Sources */,
+				93BDF0B32B8A63290031DA3B /* RideCompleteView.swift in Sources */,
 				9362DE1C2B6B6E31008824E9 /* ContentView.swift in Sources */,
+				930386522B9C0606000134B6 /* DriverAcceptedView.swift in Sources */,
 				93C4740C2B89128700B272AE /* ProfileView.swift in Sources */,
-				93C4740E2B893B7500B272AE /* AnimatedBackground.swift in Sources */,
 				9362DE1A2B6B6E31008824E9 /* RideShareApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,6 +446,7 @@
 				DEVELOPMENT_TEAM = WHYF2WL6Y6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RideShare/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -461,6 +476,7 @@
 				DEVELOPMENT_TEAM = WHYF2WL6Y6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RideShare/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

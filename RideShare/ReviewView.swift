@@ -1,15 +1,16 @@
 //
-//  ProfileView.swift
+//  ReviewView.swift
 //  RideShare
 //
-//  Created by Bryan Ardon on 2/23/24.
+//  Created by Bryan Ardon on 3/8/24.
 //
 
 import SwiftUI
 
-struct ProfileView: View {
+struct ReviewView: View {
     @State private var profileImage: Image = Image("ProfilePicture")
     @State private var username: String = "Gorilla Joe"
+    @State private var textField: String = ""
     @State private var drivingSince: String = "1990"
     @State private var trips: Int = 2351
     @State private var rating: Int = 5
@@ -30,10 +31,6 @@ struct ProfileView: View {
 //                .edgesIgnoringSafeArea(.all)
                 
             VStack {
-                Text(username)
-                    .font(.title)
-                    .padding()
-                
                 // Profile Image
                 profileImage
                     .resizable()
@@ -41,7 +38,11 @@ struct ProfileView: View {
                     .frame(width: 250, height: 220)
                     .clipShape(Circle())
                     .padding(15)
-                Spacer().frame(height: 50)
+                
+                Text(username)
+                    .font(.title)
+                    .padding()
+                Spacer().frame(height: 20)
 
                 // Bio
                 HStack(spacing: 20){
@@ -55,49 +56,38 @@ struct ProfileView: View {
                            .frame(width: 30, height: 30)
                            }
                     Text("\(rating).0")
+                        .font(.title2)
                 }
-                
-                HStack(spacing: 45) {
-                    VStack {
-                        Text("\(trips)")
-                            .font(.title)
-                        Spacer().frame(height:10)
-                        Text("Trips")
-                            .font(.title3)
-                    }
-                    .padding()
-                    
-                    VStack {
-                        Text("\(drivingSince)")
-                            .font(.title)
-                        Spacer().frame(height:10)
-                        Text("Driving since")
-                            .font(.title3)
-                    }
-                    .padding()
-                }
-                Text("Compliments")
+                TextField(
+                        "User name (email address)",
+                        text: $username
+                    )
+                Text("Leave a Compliment")
                     .font(.title2)
                     .bold()
                     VStack(alignment: .leading, spacing: 10) {
     //                    Text(title)
     //                        .font(.title)
     //                        .fontWeight(.bold)
-                        Text(content)
+                        TextField("Your review", text: $textField)
                             .font(.body)
-                            .lineLimit(3)
-                        Text("By \(author) • \(date)")
+                        Text("By Danny • \(date)")
                             .font(.subheadline)
                             .foregroundColor(.gray)
-    //                    Text(content)
-    //                        .font(.body)
-//                            .lineLimit(3) // Limit content to 3 lines
                     }
                         .padding()
                         .background(Color.white)
                         .cornerRadius(10)
-//                        .shadow(radius: 5)
+                        .shadow(radius: 5)
                         .frame(maxWidth: 370)
+                Button(action: {}) {
+                    Text("Submit")
+                        .padding()
+                        .foregroundColor(.white)
+                        .background(.orange)
+                        .cornerRadius(10)
+                        .padding()
+                }
                     
                     
                 
@@ -109,8 +99,9 @@ struct ProfileView: View {
        
 }
 
-struct ProfileView_Previews: PreviewProvider {
+struct ReviewView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileView()
+        ReviewView()
     }
 }
+

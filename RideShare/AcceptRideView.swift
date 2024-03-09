@@ -29,19 +29,19 @@ struct AcceptRideView: View {
       }
     private var timerColor: Color {
          let percentage = Double(countdown) / 10.0
-         return Color(red: 1.0 - percentage, green: percentage, blue: 0.0)
+         return Color(red:255, green: percentage, blue: percentage)
      }
     
     var body: some View {
         ZStack{
             //Background Image
-            Image("Background")
+            Image("ExcellentMap")
                .resizable()
                .aspectRatio(contentMode: .fill)
-               .blur(radius: 5)
+               .blur(radius: 4)
                .edgesIgnoringSafeArea(.all)
             //Inside box
-            VStack(alignment: .leading, spacing: 10) {
+            VStack(alignment: .center, spacing: 10) {
                 HStack(alignment:.center ,spacing: 10 ) {
                     Text(passengerName)
                     passengerImage
@@ -49,21 +49,24 @@ struct AcceptRideView: View {
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 150, height: 200)
                         .clipShape(Circle())
-                            .overlay(
-                               Circle().stroke(Color.black, lineWidth: 2)
-                            )
+//                            .overlay(
+//                               Circle().stroke(Color.black, lineWidth: 2)
+//                            )
                         .padding(15)
 //                    Spacer().frame(height: 50)
                     Text("$\(passengerFare)")
                     
                 }
-                Button(action: startCountdown) {
-                            Text("Countdown: \(countdown)")
+                Spacer().frame(height: 10)
+                Button(action: {}) {
+                            Text("Accept")
                                 .padding()
                                 .foregroundColor(.white)
-                                .background(timerColor)
+                                .background(.orange)
                                 .cornerRadius(10)
+//                                .frame(width: 1000)
                         }
+                .onAppear(perform: startCountdown)
                 Button(action:{}){
                     Text("Decline")
                         .padding()
@@ -74,6 +77,7 @@ struct AcceptRideView: View {
                
                 
             }
+            .padding()
             .background(Color.white)
             .cornerRadius(10)
             .shadow(radius: 5)
